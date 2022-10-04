@@ -20,8 +20,6 @@ export const itemsSlice = createSlice({
         isLoading: false,
         error: null
     },
-    reducers: {
-    },
     extraReducers: {
         [fetchContacts.pending]: handlePending,
         [fetchContacts.fulfilled](state, action) {
@@ -30,7 +28,7 @@ export const itemsSlice = createSlice({
             state.items = action.payload
         },
         [fetchContacts.rejected]: handleRejected,
-// =========== addItem =========================
+        // =========== addItem =========================
         [addItem.pending]: handlePending,
         [addItem.fulfilled](state, action) {
             state.isLoading = false;
@@ -38,7 +36,7 @@ export const itemsSlice = createSlice({
             state.items.push(action.payload)
         },
         [addItem.rejected]: handleRejected,
-// ============ removeItem =====================
+        // ============ removeItem =====================
         [removeItem.pending]: handlePending,
         [removeItem.fulfilled](state, action) {
             state.isLoading = false;

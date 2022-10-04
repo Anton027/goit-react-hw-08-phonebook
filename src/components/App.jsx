@@ -27,7 +27,7 @@ export function App() {
         <Box padding="20px 0">
           <Filter/>
             {isLoading && !error && <Loader />}
-            <ContactsList/>
+            <ContactsList />
         </Box>
         <GlobalStyle />
       </Box>
