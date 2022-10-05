@@ -25,7 +25,7 @@ const ContactsList = () => {
             flexDirection="column"
             padding="10px 0"
             >
-                {filterName && filterName.map( ({ phone,name,id }) => (
+                {filterName && filterName.map( ({ number,name,id }) => (
                     <Box
                         as="li"
                         display='inline-flex'
@@ -33,7 +33,7 @@ const ContactsList = () => {
                         marginBottom="5px"
                         padding="3px"
                     >
-                        <p>{`${name}: ${phone}`}</p>
+                        <p>{`${name}: ${number}`}</p>
                         <button
                             onClick={() => 
                                 dispatch(removeItem(id))
