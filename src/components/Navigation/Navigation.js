@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 
 export const Navigation = () => {
-    const { isLoggedIn } = useAuth;
+    const { isLoggedIn } = useAuth();
 
     return (
         <nav>
@@ -13,7 +13,7 @@ export const Navigation = () => {
             </NavLink>
             {isLoggedIn && (
                 <NavLink  to="/contacts">
-                    Contacts
+                    Phonebook
                 </NavLink>
             )}
         </nav>
