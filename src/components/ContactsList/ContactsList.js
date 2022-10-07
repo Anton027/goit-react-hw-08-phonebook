@@ -3,6 +3,7 @@ import { Box } from "components/Box"
 import { useDispatch, useSelector } from "react-redux";
 import { getFilter, getItems } from "redux/selector";
 import { removeItem } from "redux/operations";
+import { Button, Informations } from "./ContactList.styled";
 
 const ContactsList = () => {
     const items = useSelector(getItems);
@@ -33,14 +34,12 @@ const ContactsList = () => {
                         marginBottom="5px"
                         padding="3px"
                     >
-                        <p>{`${name}: ${number}`}</p>
-                        <button
-                            onClick={() => 
+                        <Informations>{`${name}: ${number}`}</Informations>
+                        
+                        <Button onClick={() => 
                                 dispatch(removeItem(id))
                             }
-                        >
-                            delete
-                        </button>
+                        >Delete</Button>
                     </Box>
                 ))}
             </Box>
