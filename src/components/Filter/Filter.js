@@ -2,6 +2,7 @@ import { Box } from "components/Box";
 import React from "react";
 import { useDispatch } from 'react-redux';
 import { setStatusFilter } from "redux/filterSlice/filterSlice";
+import { InputSearch } from "./Filter.styled";
 
 const Filter = () => {
 
@@ -19,7 +20,7 @@ const Filter = () => {
             Contacts
             </Box>
             <p>Find Contacts by name</p>
-            <input
+            <InputSearch
                 type="text"
                 name="filter"
                 onChange={handleChangeFilter}

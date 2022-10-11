@@ -22,4 +22,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     list-style: none;
   }
+  a {
+    text-decoration: none;
+  }
 `;

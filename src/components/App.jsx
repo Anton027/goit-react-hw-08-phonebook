@@ -7,6 +7,7 @@ import { Routes,Route } from 'react-router-dom';
 import { Layout } from './Layout';
 import { RestrictedRoute } from './RestrictedRoute';
 import { PrivateRoute } from './PrivateRoute';
+import PropagateLoader from "react-spinners/PropagateLoader";
 
 const HomePage = lazy(() => import('../pages/Home'));
 const LoginPage = lazy(() => import('../pages/Login'));
@@ -22,7 +23,7 @@ export function App() {
   }, [dispatch]);
 
     return isRefreshing ? (
-    <b>Refreshing user...</b>
+      <PropagateLoader color="#36d7b7" size={40} />
     ) : (
         <Routes>
           <Route path="/" element={<Layout />}>

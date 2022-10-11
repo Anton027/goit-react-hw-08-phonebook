@@ -9,15 +9,19 @@ export const Navigation = () => {
 
     return (
         <Nav>
-            <Wrap>
-                <NavLink  to="/">
-                    Home
+                <NavLink to="/">
+                    <Wrap>
+                        Home
+                    </Wrap>
+                    
                 </NavLink>
-            </Wrap>
             
             {isLoggedIn && (
-                <NavLink  to="/contacts">
-                    Phonebook
+                <NavLink to="/contacts">
+                    <Wrap>
+                        Phonebook
+                    </Wrap>
+                    
                 </NavLink>
             )}
         </Nav>

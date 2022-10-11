@@ -4,6 +4,8 @@ export const Nav = styled.nav`
     display: flex;
 `;
 
-export const Wrap = styled.div`
-    margin-right: 40px;
+export const Wrap = styled.p`
+    text-decoration: none;
+    margin: 0px 10px;
+    font-weight: bold;
 `
