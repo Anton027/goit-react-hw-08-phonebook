@@ -13,7 +13,6 @@ export const Navigation = () => {
                     <Wrap>
                         Home
                     </Wrap>
-                    
                 </NavLink>
             
             {isLoggedIn && (
@@ -21,7 +20,6 @@ export const Navigation = () => {
                     <Wrap>
                         Phonebook
                     </Wrap>
-                    
                 </NavLink>
             )}
         </Nav>

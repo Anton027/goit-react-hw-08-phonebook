@@ -1,8 +1,9 @@
 import { Box } from "components/Box";
 import React from "react";
+import { AiOutlineKey } from "react-icons/ai";
 import { useDispatch } from 'react-redux';
 import { setStatusFilter } from "redux/filterSlice/filterSlice";
-import { InputSearch } from "./Filter.styled";
+import { InputSearch, LabelSearch } from "./Filter.styled";
 
 const Filter = () => {
 
@@ -19,12 +20,16 @@ const Filter = () => {
             <Box as="h2" marginBottom="15px">
             Contacts
             </Box>
-            <p>Find Contacts by name</p>
-            <InputSearch
-                type="text"
-                name="filter"
-                onChange={handleChangeFilter}
-            />
+            <LabelSearch>
+                <p><AiOutlineKey size={22} /></p>
+                <InputSearch
+                    placeholder="Find by name..."
+                    type="text"
+                    name="filter"
+                    onChange={handleChangeFilter}
+                />
+            </LabelSearch>
+            
         </Box>
     )
 };

@@ -20,23 +20,24 @@ export const Label = styled.label`
     display: flex;
     align-items: flex-end;
 `;
-
-export const Title = styled.h1`
-    margin-bottom: 15px;
-    
-    display: flex;
-    justify-content: center;
-
-`;
-export const FormButton = styled.button`
+export const Button = styled.button`
+    display: block;
     border-radius: 5px;
     border-color: grey;
+    max-width: 80px;
+    margin: 0px auto;
 `;
+
 export const Form = styled.form`
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
-    align-items: center;
+    grid-gap: 15px;
+`;
+export const Title = styled.h2`
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 `;

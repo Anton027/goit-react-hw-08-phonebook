@@ -1,4 +1,5 @@
 import React from "react";
+import { AiOutlineDelete } from "react-icons/ai";
 import { Box } from "components/Box"
 import { useDispatch, useSelector } from "react-redux";
 import { getFilter, getItems } from "redux/selector";
@@ -39,7 +40,9 @@ const ContactsList = () => {
                         <Button onClick={() => 
                                 dispatch(removeItem(id))
                             }
-                        >Delete</Button>
+                        >
+                            <AiOutlineDelete size={20} />
+                        </Button>
                     </Box>
                 ))}
             </Box>
