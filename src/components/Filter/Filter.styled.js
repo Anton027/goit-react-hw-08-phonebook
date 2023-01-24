@@ -11,7 +11,7 @@ export const InputSearch = styled.input`
 `;
 
 export const LabelSearch = styled.label`
-    display: flex;
+    display: inline-flex;
     align-items: center;
 `;
 
