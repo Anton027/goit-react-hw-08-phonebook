@@ -7,6 +7,9 @@ export const Nav = styled.nav`
 
 export const Wrap = styled.p`
     text-decoration: none;
-    margin: 8px 10px;
+    margin: 10px 12px;
     font-weight: bold;
+    &:hover{
+        color: red;
+    }
 `

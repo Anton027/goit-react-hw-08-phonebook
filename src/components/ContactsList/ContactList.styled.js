@@ -6,6 +6,10 @@ export const Button = styled.button`
     border-radius: 5px;
     border-color: grey;
     min-height: 25px;
+    &:hover{
+        background-color: red;
+        color: white;
+    }
 `;
 
 export const Informations = styled.p`

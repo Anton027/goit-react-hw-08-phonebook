@@ -8,9 +8,12 @@ export const Input = styled.input`
         margin: 0px 7px;
     }
     
-    padding: 3px;
+    padding: 5px;
     border-radius: 5px;
     background-color: whitesmoke;
+    &:hover, &:focus{
+        background-color: greenyellow;
+    }
 `;
 export const Label = styled.label`
     @media screen and (max-width: 899px) {
@@ -29,8 +32,12 @@ export const Title = styled.h1`
 
 `;
 export const FormButton = styled.button`
-    border-radius: 5px;
+    border-radius: 50%;
     border-color: grey;
+    padding: 8px 10px;
+    &:hover{
+        background-color: greenyellow;
+    }
 `;
 export const Form = styled.form`
     display: flex;

@@ -3,7 +3,7 @@ import React from "react";
 import { AiOutlineKey } from "react-icons/ai";
 import { useDispatch } from 'react-redux';
 import { setStatusFilter } from "redux/filterSlice/filterSlice";
-import { InputSearch, LabelSearch } from "./Filter.styled";
+import { InputSearch, LabelSearch, Icon } from "./Filter.styled";
 
 const Filter = () => {
 
@@ -21,7 +21,9 @@ const Filter = () => {
             Contacts
             </Box>
             <LabelSearch>
-                <p><AiOutlineKey size={22} /></p>
+                <Icon>
+                    <AiOutlineKey size={22} />
+                </Icon>
                 <InputSearch
                     placeholder="Find by name..."
                     type="text"
